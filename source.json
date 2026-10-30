@@ -1,0 +1,12 @@
+{
+  "version": "10071310",
+  "extracted_on": "2026-10-30",
+  "images": 809,
+  "units": 372,
+  "scope": "JP素材一覧のunit_icon_unit_1xxxxx全件。衣装違い・NPC・特殊ユニットを含む。",
+  "manifest": "https://prd-priconne-redive.akamaized.net/dl/Resources/10071310/Jpn/AssetBundles/iOS/manifest/unit2_assetmanifest",
+  "names": "https://github.com/Expugn/priconne-diff/tree/3709f501531c15a39f7cfa1355590b768efd824b/JP/csv",
+  "format": "WebP lossless",
+  "checks": "All 809 source bundles matched manifest size and MD5. Each extracted Texture2D name matched its asset ID.",
+  "automatic_updates": false
+}
