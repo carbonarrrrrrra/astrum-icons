@@ -41,5 +41,7 @@ def main():
  result=dict(old,records=records,version=v,characters=len({r['unit_id'] for r in records}),images=len(records))
  if changed:result['updated']=datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
  (ROOT/'catalog.json').write_text(json.dumps(result,ensure_ascii=False))
+ source=dict(version=v,extracted_on=result['updated'],images=len(records),units=result['characters'],scope=result['scope'],manifest='https://prd-priconne-redive.akamaized.net/dl/Resources/'+v+'/Jpn/AssetBundles/iOS/manifest/unit2_assetmanifest',names='https://github.com/Expugn/priconne-diff/tree/'+sha+'/JP/csv',format='WebP lossless',checks='Source bundle sizes and MD5 validated before extraction.',automatic_updates=True)
+ (ROOT/'source.json').write_text(json.dumps(source,ensure_ascii=False,indent=2))
  print('Validated',len(records),'icons; changed:',changed)
 if __name__=='__main__':main()
