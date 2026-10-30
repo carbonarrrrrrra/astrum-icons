@@ -1,4 +1,4 @@
-# Astrum Icons
+# LoA Icons
 
 Unofficial JP Princess Connect! Re:Dive WebP icon library.
 
